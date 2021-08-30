@@ -1,0 +1,178 @@
+.calc-repair {
+  max-width: 1920px;
+  overflow: hidden;
+  margin: 0 auto;
+  min-height: 1178px;
+  position: relative;
+  & h2 {
+    margin-bottom: 10px;
+  }
+  & .wrapper {
+    position: relative;
+    z-index: 3;
+    margin-top: 32px;
+  }
+}
+
+.calc-repair__sofa,
+.calc-repair__background,
+.calc-repair-bg-light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.calc-repair-bg-light {
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+.calc-repair__sofa {
+  z-index: 1;
+}
+.calc-repair__background {
+  overflow: hidden;
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+.calc-img-1 {
+  z-index: 0;
+}
+.calc-img-2 {
+  transform: translateX(0%);
+  opacity: 1;
+  transition: opacity 1s, transform 0.4s linear;
+}
+.calc-img-2 {
+  &.active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity 1s, transform 0.4s linear;
+  }
+}
+.calculator {
+  max-width: 810px;
+  margin: 64px auto 0;
+  display: grid;
+}
+.checkbox {
+  display: flex;
+  justify-content: space-around;
+  max-width: 555px;
+  width: 100%;
+  margin: 0 auto;
+}
+.checkbox__item {
+  & svg {
+    display: block;
+    height: 148px;
+    width: 148px;
+  }
+  & p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}
+.meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  & span {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.meter__range {
+  position: relative;
+  background: #f7f7f7;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  max-width: 555px;
+  width: 100%;
+  height: 60px;
+  margin-top: 9px;
+}
+.input-number,
+.input-range {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.input-range {
+  bottom: -10px;
+}
+.input-number {
+  height: 100%;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 32px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+// input[type="range"] {
+// }
+.room-bathroom {
+  display: flex;
+  max-width: 557px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 68px 0;
+}
+.room,
+.bathroom {
+  position: relative;
+  width: 262px;
+  height: 44px;
+  margin: 0 6px;
+}
+.room-bathroom__item {
+  margin-top: 24px;
+  & p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $colorBlack;
+    margin-bottom: 11px;
+  }
+}
+@media (min-width: 500px) {
+  .checkbox__item {
+    & svg {
+      width: 189px;
+      height: 189px;
+    }
+  }
+}
+@media (min-width: 578px) {
+  .room-bathroom {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .calc-repair {
+    & .wrapper {
+      margin-top: 70px;
+    }
+  }
+  .meter {
+    margin-top: 43px;
+  }
+  .room-bathroom {
+    margin: 42px;
+  }
+}

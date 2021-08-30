@@ -1,0 +1,33 @@
+.fast-and-high{
+    margin: 264px 0 57px;
+}
+.fast-and-high__body{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 0px;
+    margin-top: 32px;
+    ul{
+        list-style: disc;
+        li{
+            margin-bottom: 25px;
+            color: $colorBlue;
+            span{
+                color: $colorBlack;
+            }
+        }
+    }
+}
+.fast-and-high__column{
+    padding: 0 15px;
+}
+@media (min-width: 992px){
+    .fast-and-high{
+        margin: 153px 0 89px;
+    } 
+    .fast-and-high__body{
+        margin-top: 56px;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, auto);
+        gap: 80px;
+    }
+}

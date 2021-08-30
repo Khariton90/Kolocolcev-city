@@ -1,0 +1,52 @@
+// &display=swap
+//&subset=cyrillic-ext
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,900&display=swap&subset=cyrillic-ext");
+
+//Переменные
+@import "variables";
+@import "header";
+@import "complex-repair";
+@import "fast-and-high";
+@import "calc-repair";
+@import "gallery-styles";
+@import "gallery-of-works";
+@import "reviews";
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  font-family: $fontFamily;
+  box-sizing: border-box;
+  min-width: 320px;
+  color: $colorBlack;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1270px;
+  min-width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-size: 36px;
+}
+.section-title{
+  font-weight: 500;
+}
+@media (min-width: 1440px){
+  .section-title{
+    transform: translateX(-32px);
+  }
+}
