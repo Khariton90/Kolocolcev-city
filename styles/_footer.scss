@@ -1,0 +1,10 @@
+.footer{
+    height: 401px;
+    background-color: $colorGallery;
+}
+
+@media(min-width: 768px){
+    .footer{
+        height: 295px;
+    }
+}

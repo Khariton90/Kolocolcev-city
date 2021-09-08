@@ -1,14 +1,16 @@
+//Секция Комплексный ремонт квартир в Санкт-Петербурге
+
 .complex-repair {
   background: url("../img/complex-repair-bg.png") center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 124px 0 0 0;
   color: $colorWhite;
   min-height: 800px;
   display: flex;
+  background-attachment: scroll;
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  object-fit: cover;
 }
 .complex-repair__title {
   text-align: center;
@@ -115,9 +117,9 @@ h1 {
   color: $colorWhite;
   width: 250px;
   height: 50px;
+  border: none;
   background-color: $colorBlue;
   & button {
-    border: none;
     cursor: pointer;
   }
 }
@@ -147,6 +149,8 @@ h1 {
   .complex-repair {
     min-height: 822px;
     align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .complex-repair__subtitle {
     margin: 45px 0 24px 0;
